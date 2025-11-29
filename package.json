@@ -7,6 +7,9 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"test": "vitest run",
+	    "lint": "eslint",
+	    "format": "prettier",
+	    "check": "prettier --write . && eslint --fix",
 		"deploy": "pnpm run build && wrangler deploy",
 		"preview": "pnpm run build && vite preview",
 		"cf-typegen": "wrangler types"
